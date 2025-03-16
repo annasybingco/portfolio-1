@@ -1,14 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 html,
-body {
+body,
+#root {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Syne", sans-serif;
   background: #0a0a0a;
   color: #f3f4f6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Ensures all elements follow border-box sizing */
 }
 
 @layer utilities {
