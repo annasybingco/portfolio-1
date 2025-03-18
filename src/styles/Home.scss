@@ -1,0 +1,18 @@
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+  &__description {
+    width: 100%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  &__img {
+    width: 40%;
+  }
+}

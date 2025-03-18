@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -39,4 +38,35 @@
 
 .read-the-docs {
   color: #888;
+}
+
+h1 {
+  font-family: "Syne";
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Syne";
+  font-size: 30px;
+}
+
+body {
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+}
+
+button {
+  background-image: linear-gradient(to right, #bfbfff 0%, #8db8f9 100%);
+  background-position: left;
+  transition: background-position 1s;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  width: 160px;
+  color: black;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to right, #ffbf7f 0%, #f98dbf 100%);
+  }
 }

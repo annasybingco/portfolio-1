@@ -1,4 +1,5 @@
 import logo from "../assets/icons/logo.svg";
+import "../styles/Navbar.scss";
 import { useEffect } from "react";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
@@ -7,10 +8,10 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
   return (
     <nav className="">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+      <div>
+        <div className="navbar">
           <a href="#home">
-            <img src={logo} alt="Anna Sybingco Logo" />
+            <img src={logo} alt="Anna Sybingco Logo" className="logo" />
           </a>
           <div
             className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
@@ -20,12 +21,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
-              className="text-gray-300 hove: text-white transition-colors"
-            >
-              Home
-            </a>
             <a
               href="#about"
               className="text-gray-300 hove: text-white transition-colors"

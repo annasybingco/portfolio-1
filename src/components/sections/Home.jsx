@@ -1,12 +1,9 @@
 import Headshot from "../../assets/images/bw-headshot.png";
-import "../../styles/Home.css";
+import "../../styles/Home.scss";
 
 export const Home = () => {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center justify-center relative"
-    >
+    <section id="home">
       <div id="home">
         <div className="banner">
           <div className="banner__text">

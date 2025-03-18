@@ -5,6 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
 import "./index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
